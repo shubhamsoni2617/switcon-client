@@ -60,13 +60,14 @@ const Routes = () => {
         setLoading(false);
       } catch (error) {
         setLoading(false);
+        console.log(111, history.location.pathname);
+        sessionStorage.clear();
         if (
           history.location.pathname === "/login" ||
           history.location.pathname === "/signup"
         )
           return;
         makeToast("error", "User not authenticated");
-        sessionStorage.clear();
         history.push("/login");
       }
     };

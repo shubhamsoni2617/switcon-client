@@ -34,9 +34,10 @@ const LoginPage = ({ history, dispatch, setupSocket }) => {
           err.response &&
           err.response.data &&
           err.response.data.message
-        )
+        ) {
           setLoading(false);
-        makeToast("error", err.response.data.message);
+          makeToast("error", err.response.data.message);
+        }
       });
   };
 
