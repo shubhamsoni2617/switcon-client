@@ -1,0 +1,15 @@
+.approval {
+  border: 1px solid;
+  padding: 10px;
+  background: #8080801c;
+  margin-bottom: 10px;
+}
+
+.approval-button {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.approval-button button {
+  width: unset;
+}

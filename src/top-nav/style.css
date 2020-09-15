@@ -1,0 +1,43 @@
+.topnav {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid;
+  background: #f7c52a;
+}
+
+.left-nav {
+  display: flex;
+  width: 50%;
+  justify-content: space-evenly;
+}
+
+.right-nav {
+  display: flex;
+  width: 18%;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+a {
+  color: #333;
+  padding: 20px 20px;
+  font-size: 14px;
+}
+
+.active {
+  color: #f7c52a;
+  background: #333;
+}
+
+.auth {
+  padding: 0;
+}
+
+.auth.active {
+  display: none;
+}
+
+span {
+  font-size: 14px;
+  cursor: pointer;
+}

@@ -1,0 +1,45 @@
+.form {
+  width: 50vw;
+}
+
+.form .inputGroup {
+  display: flex;
+  justify-content: space-between;
+}
+
+.form input {
+  width: 50%;
+}
+.select {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+select {
+  padding: 8px;
+  min-width: 50%;
+}
+
+option {
+  padding: 10px 0;
+}
+textarea {
+  height: 100px;
+  max-width: 50%;
+  min-width: 50%;
+}
+
+input:disabled {
+  cursor: not-allowed;
+}
+
+option:disabled {
+  cursor: not-allowed;
+}
+
+.error {
+  color: red;
+  font-style: italic;
+}
