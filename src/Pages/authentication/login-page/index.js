@@ -18,7 +18,6 @@ const LoginPage = ({ history, dispatch, setupSocket }) => {
     })
       .then((response) => {
         makeToast("success", response.data.message);
-        console.log(2222, response.data);
         dispatch({
           type: "SET_USER_DATA",
           payload: response.data,

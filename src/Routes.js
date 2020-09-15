@@ -84,7 +84,6 @@ const Routes = () => {
       });
 
       socket.on("stateUpdated", (payload) => {
-        console.log("stateUpdated", payload);
         dispatch({
           type: "UPDATE_USER_FORMS",
           payload,
